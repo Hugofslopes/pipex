@@ -3,22 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   pipex.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hfilipe- <hfilipe-@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: hfilipe- <hfilipe-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/27 15:38:06 by luigi             #+#    #+#             */
-/*   Updated: 2025/01/05 18:15:44 by hfilipe-         ###   ########.fr       */
+/*   Updated: 2025/01/10 11:26:47 by hfilipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "pipex.h"
-
 
 void	child(char **av, int *fd, char **envp)
 {
 	int	fd_op;
 
 	close(fd[0]);
-	fd_op = open(av[1], O_RDONLY, 0777);
+	fd_op = open(av[1], O_RDONLY, 0444);
 	if (fd_op == -1)
 	{
 		perror(av[1]);
@@ -36,7 +35,7 @@ void	parent(char **av, int *fd, char **envp)
 	int	fd_op;
 
 	close(fd[1]);
-	fd_op = open(av[4], O_WRONLY | O_CREAT | O_TRUNC, 0777);
+	fd_op = open(av[4], O_WRONLY | O_TRUNC, 0222);
 	if (fd_op == -1)
 	{
 		perror(av[4]);
@@ -66,16 +65,14 @@ int	main(int ac, char **av, char **envp)
 			close(fd[0]);
 			close(fd[1]);
 		}
-		else if (pid == 0)
+		else if (!pid)
 			child(av, fd, envp);
 		parent(av, fd, envp);
 	}
 	else
 	{
 		ft_putstr_fd("Invalid Input! Try ./pipex file2 cmd1 cmd2 file2\n", 2);
-		exit (128);
+		exit (1);
 	}
-	return (1);
+	return (0);
 }
-
-

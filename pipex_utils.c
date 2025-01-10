@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   pipex_utils.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hfilipe- <hfilipe-@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: hfilipe- <hfilipe-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/27 15:37:37 by luigi             #+#    #+#             */
-/*   Updated: 2025/01/05 13:37:51 by hfilipe-         ###   ########.fr       */
+/*   Updated: 2025/01/10 09:43:20 by hfilipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	free_str(char **str)
 	free (str);
 }
 
-char	*find_path(char *cmd, char **envp)
+char	*get_path(char *cmd, char **envp)
 {
 	char	**full_path;
 	char	*half_path;
@@ -55,11 +55,11 @@ void	execute(char *av, char **envp, int *fd)
 	char	*path;
 
 	cmd = ft_split(av, ' ');
-	path = find_path(cmd[0], envp);
+	path = get_path(cmd[0], envp);
 	if (!path)
 	{
 		free_str(cmd);
-		ft_putstr_fd("command not found\n", 2);
+		ft_putstr_fd("Eror: Command not found\n", 2);
 		close(fd[0]);
 		close(fd[1]);
 		exit(127);
