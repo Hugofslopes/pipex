@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   pipex.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hfilipe- <hfilipe-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: hfilipe- <hfilipe-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/27 15:38:06 by luigi             #+#    #+#             */
-/*   Updated: 2025/01/10 11:26:47 by hfilipe-         ###   ########.fr       */
+/*   Updated: 2025/01/24 21:40:55 by hfilipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	parent(char **av, int *fd, char **envp)
 	int	fd_op;
 
 	close(fd[1]);
-	fd_op = open(av[4], O_WRONLY | O_TRUNC, 0222);
+	fd_op = open(av[4], O_WRONLY | O_TRUNC | O_CREAT, 0777);
 	if (fd_op == -1)
 	{
 		perror(av[4]);
