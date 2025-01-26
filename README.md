@@ -1,7 +1,8 @@
-<div style="text-align: center;">
+<p align="center">
     <img src="https://www.42porto.com/wp-content/uploads/2024/08/42-Porto-Horizontal.png" alt="Pipex Image" />
-    <h1>Pipex</h1>
-</div>
+</p>
+<h1 align="center">Pipex</h1>
+
 <div style="text-align: justify;">
     <h2>Summary</h2>
     <p>
