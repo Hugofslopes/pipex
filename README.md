@@ -10,7 +10,7 @@
         The program receives 4 arguments. 1st is one file, second and third are bash comands like "ls, grep, ..."  and the number four other file. The argument number 4 does not need to exist because the program is able to creat it. This program should behave the same as bash :</p> <b>"> < file1 cmd1 | cmd2 > file2" </b>
     <h2>Code Phases</h2>
     <p>
-        
+       asdsad 
     </p>
     <h2>Setup</h2>
     <p>
