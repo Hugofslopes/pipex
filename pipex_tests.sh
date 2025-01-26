@@ -1,5 +1,5 @@
 echo "This is the content for file1.\\nola\\nola" > a
-touch a b c d e f g h i j		
+touch b c d e f g h i	
 echo test1 - sort reverse
 valgrind ./pipex a "sort -r" " uniq -c" b
 echo \\n
