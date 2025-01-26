@@ -12,25 +12,34 @@
 
 ## Code Phases
     
-    asdsad 
+    asdsad
+
 ## Code Setup
     
-    **Step 1:** Clone the repository
+    Step 1: Clone the repository
     
+    ```
     https://github.com/Hugofslopes/pipex.git    
+    ```
 
     **Step 2:** Open the terminal on the repo folder and write:
     
+    ```
     make
-    
+    ```
+
     **Step 3:** Execute:
     
+    ```
     "./pipex &lt;file1&gt; "comand1" "comand2" &lt;file2&gt;"
-    
+    ```
+
     **Step 4:** Run tests:
     
+    ```
     ./pipex_testes.sh
-    
+    ```
+
 ## Improvements
     
     The improvements to be made are to accept multiple pipes and handle more input errors, like the case of unset PATH before running the program.
