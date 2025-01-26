@@ -49,7 +49,7 @@
 
 <html>
     <p>
-    <b>Step</b> 4- Run tests:
+    <b>Step 4:</b> Run tests:
     </p>
 </html>
 
