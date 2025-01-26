@@ -32,3 +32,7 @@
 ```
 bash -c "$(curl -fsSL https://raw.github.com/xicodomingues/francinette/master/bin/install.sh)"
 ```
+
+```
+"./pipex &lt;file1&gt; "comand1" "comand2" &lt;file2&gt;"
+```
