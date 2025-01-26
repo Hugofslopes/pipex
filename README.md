@@ -16,7 +16,11 @@
     <p>
         <b>Step 1:</b> Clone the repository<br><code>https://github.com/Hugofslopes/pipex.git</code><br><br>
         <b>Step 2:</b> Open the terminal on the repo folder and write:<br> <code>make</code><br><br>
-        <b>Step 3:</b> Execute:<br><code>./pipex &lt;file1&gt; "comand1" "comand2" &lt;file2&gt;</code><br><br>
+        <b>Step 3:</b> Execute:<br>
+        ```
+        ./pipex &lt;file1&gt; "comand1" "comand2" &lt;file2&gt;
+        ```
+        <br><br>
         <b>Step 4:</b> Run tests:<br><code>./pipex_testes.sh</code>
     </p>
     <h2>Improvements</h2>
