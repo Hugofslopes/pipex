@@ -1,4 +1,4 @@
-<!-- <p align="center">
+<p align="center">
     <img src="https://www.42porto.com/wp-content/uploads/2024/08/42-Porto-Horizontal.png" alt="Pipex Image" />
 </p>
 <h1 align="center">Pipex</h1>
@@ -24,27 +24,6 @@
         The improvements to be made are to accept multiple pipes and handle more input errors, like the case of unset PATH before running the program.
     </p>
 </div>
- -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Copy to Clipboard Example</title>
-</head>
-<body>
-    <h1>Copy Text Example</h1>
-    <p id="textToCopy">This is the text that will be copied to the clipboard.</p>
-    <button id="copyButton">Copy Text</button>
-    <script>
-        document.getElementById("copyButton").addEventListener("click", function() 
-            const text = document.getElementById("textToCopy").innerText;
-            navigator.clipboard.writeText(text).then(() => {
-                alert("Text copied to clipboard!");
-            }).catch(err => {
-                console.error("Failed to copy: ", err);
-            });
-        });
-    </script>
-</body>
-</html>
+...
+olas.asdasd
+...
