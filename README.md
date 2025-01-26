@@ -1,4 +1,6 @@
-![Pipex Image](https://www.42porto.com/wp-content/uploads/2024/08/42-Porto-Horizontal.png)
+<div style="text-align: center;">
+    <img src="https://www.42porto.com/wp-content/uploads/2024/08/42-Porto-Horizontal.png" alt="Pipex Image" style="max-width: 100%; height: auto;">
+</div>
 
 # Pipex
 
