@@ -45,7 +45,7 @@
     </p>
 </html>
 
-    "./pipex &lt;file1&gt; "comand1" "comand2" &lt;file2&gt;"
+    ./pipex <file1> "comand1" "comand2" <file2>
 
 <html>
     <p>
@@ -59,6 +59,6 @@
     
 <html>
     <p>
-    The improvements to be made are to accept multiple pipes and handle more input errors, like the case of unset PATH before running the program.
+    The improvements to be made are to accept multiple pipes and handle more input errors, like the case where you unset PATH before running the program.
     </p>
 <html>
