@@ -25,31 +25,35 @@
 
 <html>
     <p>    
-    Step 1: Clone the repository
+    <b>Step 1:<b> Clone the repository
     <p>
 </html>
  
-    ```
     https://github.com/Hugofslopes/pipex.git    
-    ```
 
-    **Step 2:** Open the terminal on the repo folder and write:
-    
-    ```
+<html>
+    <p>
+    <b>Step 2-</b> Open the terminal on the repo folder and write:
+    <p>
+</html>
+
     make
-    ```
 
-    **Step 3:** Execute:
-    
-    ```
+<html>
+    <p>
+    <b>Step 3-</b> Execute:
+<p>
+</html>
+
     "./pipex &lt;file1&gt; "comand1" "comand2" &lt;file2&gt;"
-    ```
 
-    **Step 4:** Run tests:
-    
-    ```
+<html>
+    <p>
+    <b>Step</b> 4- Run tests:
+    <p>
+</html>
+
     ./pipex_testes.sh
-    ```
 
 ## Improvements
     
