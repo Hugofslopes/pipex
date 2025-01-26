@@ -1,9 +1,9 @@
-<div style="text-align: center;">
-    <img src="https://www.42porto.com/wp-content/uploads/2024/08/42-Porto-Horizontal.png" alt="Pipex Image" style="max-width: 100%; height: auto;">
-</div>
-
-
 # Pipex
+
+
+| ![Pipex Image](https://www.42porto.com/wp-content/uploads/2024/08/42-Porto-Horizontal.png) |
+
+|:--:|
 
 
 **Summary**
@@ -13,5 +13,6 @@ The program receives 4 arguments and it will store on the last argument (one fil
 
 
 **Improvements**  
+
 
 The improvements to be made are to accept multiple pipes and handle more input errors, like the case of unset PATH before running the program.
