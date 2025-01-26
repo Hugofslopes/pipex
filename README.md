@@ -20,7 +20,7 @@
         ./pipex &lt;file1&gt; "comand1" "comand2" &lt;file2&gt;<br>
         <b>Step 4:</b> Run tests: 
     </p>
-        'Write ./pipex_testes.sh'
+    <code>./pipex_testes.sh</code>
     <h2>Improvements</h2>
     <p>
         The improvements to be made are to accept multiple pipes and handle more input errors, like the case of unset PATH before running the program.
