@@ -14,13 +14,17 @@
 </html>
 
 ## Code Phases
-    
+<html>
+    <p>    
     asdsad
-
+    <p>
+</html>
 ## Code Setup
-    
+<html>
+    <p>    
     Step 1: Clone the repository
-    
+    <p>
+</html>
     ```
     https://github.com/Hugofslopes/pipex.git    
     ```
