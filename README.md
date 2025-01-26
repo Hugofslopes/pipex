@@ -33,7 +33,7 @@
 
 <html>
     <p>
-    <b>Step 2-</b> Open the terminal on the repo folder and write:
+    <b>Step 2:</b> Open the terminal on the repo folder and write
     </p>
 </html>
 
@@ -41,7 +41,7 @@
 
 <html>
     <p>
-    <b>Step 3-</b> Execute:
+    <b>Step 3:</b> Execute
     </p>
 </html>
 
