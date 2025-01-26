@@ -25,11 +25,11 @@
 
 <html>
     <p>    
-    <b>Step 1:<b> Clone the repository
+    <b>Step 1:</b> Clone the repository
     </p>
 </html>
  
-    https://github.com/Hugofslopes/pipex.git    
+    git clone https://github.com/Hugofslopes/pipex.git    
 
 <html>
     <p>
