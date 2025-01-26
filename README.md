@@ -14,9 +14,12 @@
     </p>
     <h2>Setup</h2>
     <p>
-        Step 1: Clone the repository;<br>
-        Step 2: Open the terminal on the repo folder and write : "make";<br>
-        Step 3: Execute: ./pipex &lt;file1&gt; "comand1" "comand2" &lt;file2&gt;<br>
+        <b>Step 1:</b> Clone the repository;<br>
+        <b>Step 2:</b> Open the terminal on the repo folder and write :  "make";<br>
+        <b>Step 3:</b> Execute: 
+        ./pipex &lt;file1&gt; "comand1" "comand2" &lt;file2&gt;<br>
+        <b>Step 4:</b> Run tests: 
+        Write ./pipex_testes.sh
     </p>
     <h2>Improvements</h2>
     <p>
