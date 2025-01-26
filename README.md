@@ -1,7 +1,9 @@
+<html>
 <p align="center">
     <img src="https://www.42porto.com/wp-content/uploads/2024/08/42-Porto-Horizontal.png" alt="Pipex Image" />
 </p>
 <h1 align="center">Pipex</h1>
+</html>
 
 ## Summary
 
