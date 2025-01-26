@@ -19,7 +19,7 @@
         <b>Step 3:</b> Execute: 
         ./pipex &lt;file1&gt; "comand1" "comand2" &lt;file2&gt;<br>
         <b>Step 4:</b> Run tests: 
-        Write ./pipex_testes.sh
+        'Write ./pipex_testes.sh'
     </p>
     <h2>Improvements</h2>
     <p>
