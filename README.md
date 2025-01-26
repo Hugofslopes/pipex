@@ -1,8 +1,3 @@
----
-title: "Pipes"
----
-
-<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -18,8 +13,8 @@ title: "Pipes"
                 The program receives 4 arguments and it will store on the last argument (one file) the result of the commands defined on argument 2 and 3. The argument nbr 4 does not need to exist because the program is able to create it. This behavior is the same as bash. The improvements to be made is to accept multiple pipes and handle more input errors. Like is the case of unset PATH before run the program.
             </p>
         </div>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </html>
