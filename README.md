@@ -24,6 +24,6 @@
         The improvements to be made are to accept multiple pipes and handle more input errors, like the case of unset PATH before running the program.
     </p>
 </div>
-...
+'''
 olas.asdasd
-...
+'''
