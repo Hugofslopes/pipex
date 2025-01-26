@@ -17,10 +17,10 @@
         <b>Step 1:</b> Clone the repository;<br>
         <b>Step 2:</b> Open the terminal on the repo folder and write :  "make";<br>
         <b>Step 3:</b> Execute: 
-        ./pipex &lt;file1&gt; "comand1" "comand2" &lt;file2&gt;<br>
+        <code>./pipex &lt;file1&gt; "comand1" "comand2" &lt;file2&gt;</code><br>
         <b>Step 4:</b> Run tests: 
-    </p>
     <code>./pipex_testes.sh</code>
+    </p>
     <h2>Improvements</h2>
     <p>
         The improvements to be made are to accept multiple pipes and handle more input errors, like the case of unset PATH before running the program.
