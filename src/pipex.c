@@ -6,11 +6,11 @@
 /*   By: hfilipe- <hfilipe-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/27 15:38:06 by luigi             #+#    #+#             */
-/*   Updated: 2025/01/24 21:40:55 by hfilipe-         ###   ########.fr       */
+/*   Updated: 2025/05/02 10:02:18 by hfilipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex.h"
+#include "../includes/pipex.h"
 
 void	child(char **av, int *fd, char **envp)
 {

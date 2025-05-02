@@ -6,14 +6,14 @@
 /*   By: hfilipe- <hfilipe-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/27 15:38:27 by luigi             #+#    #+#             */
-/*   Updated: 2025/01/05 13:36:55 by hfilipe-         ###   ########.fr       */
+/*   Updated: 2025/05/02 10:02:54 by hfilipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PIPEX_H
 # define PIPEX_H
 
-# include "libft/libft.h"
+# include "../libft/libft.h"
 # include <fcntl.h>
 # include <sys/types.h>
 # include <sys/wait.h>

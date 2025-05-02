@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   pipex_utils.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hfilipe- <hfilipe-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: hfilipe- <hfilipe-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/27 15:37:37 by luigi             #+#    #+#             */
-/*   Updated: 2025/01/10 09:43:20 by hfilipe-         ###   ########.fr       */
+/*   Updated: 2025/05/02 10:28:33 by hfilipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex.h"
+#include "../includes/pipex.h"
 
 void	free_str(char **str)
 {
@@ -32,8 +32,10 @@ char	*get_path(char *cmd, char **envp)
 	i = 0;
 	if (!envp[i])
 		return (NULL);
-	while (ft_strnstr(envp[i], "PATH=", 5) == 0)
+	while (envp[i] && ft_strnstr(envp[i], "PATH=", 5) == 0)
 		i++;
+	if (!envp[i])
+		return (NULL);
 	full_path = ft_split(envp[i] + 5, ':');
 	i = 0;
 	while (full_path[i])
@@ -56,14 +58,18 @@ void	execute(char *av, char **envp, int *fd)
 
 	cmd = ft_split(av, ' ');
 	path = get_path(cmd[0], envp);
-	if (!path)
+	if (!path && (!envp || !envp[0]))
 	{
 		free_str(cmd);
-		ft_putstr_fd("Eror: Command not found\n", 2);
+		ft_putstr_fd("-bash: ", 2);
+		ft_putstr_fd(av, 2);
+		ft_putstr_fd(": No such file or directory\n", 2);
 		close(fd[0]);
 		close(fd[1]);
 		exit(127);
 	}
+	if (!path && envp)
+		path = av;
 	if (execve(path, cmd, envp) == -1)
 	{
 		free_str(cmd);
