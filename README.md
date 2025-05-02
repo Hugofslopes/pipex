@@ -15,7 +15,8 @@
 ## Code Phases
 <ol>
     <li>Check if there is the correct number of arguments: 4 (2 commands and 2 files).</li>
-    <li>
+    <li>Call <b>pipe()</b> to create a one-way communication channel between the two file descriptors contained in the <b>fd</b> variable.</li>
+    <li>Call <b>fork()</b> to create one child process that will be a clone of the parent. This means that all the variables created and all the allocated memory will be duplicated.</li>
 </ol>
 
 ## Code Setup
