@@ -16,11 +16,14 @@
 <ol>
     <li>Check if there is the correct number of arguments: 4 (2 commands and 2 files).</li>
     <li>Call <b>pipe()</b> to create a one-way communication channel between the two file descriptors contained in the <b>fd</b> variable.</li>
-    <li>Call <b>fork()</b> to create one child process that will be a clone of the parent. This means that all the variables created and all the allocated memory will be duplicated. When we call the <b>fork( )</b> function, the child process will always receive the <b>PID 0</b>. That’s why we call <b>child()</b> if <b>pid</b> = 0.</b></li>
+    <li>Call <b>fork()</b> to create one child process that will be a clone of the parent. This means that all the variables created and all the allocated memory will be duplicated. When we call the <b>fork( )</b> function, the child process will always receive the <b>PID 0</b>. That’s why we call <b>child()</b> if <b>pid = 0</b>.</li>
     <li>The child will have its standard output set to the file descriptor that refers to the file given as argument 1, while its standard input will be connected to the output of the parent.</li>
     <li>The parent will have its standard input set to the file descriptor 0 of the fd array, and its output will be directed to the file specified as argument 4.</li>
-    <li>
-    
+    <li>Both child and parent will call <b>execute( )</b> first to got the path for envp and then to call execve to execute the command. We need to be alert for a few special cases:</li>
+    <ol>
+        <li><b>PATH is not set</b> - If path is not set the command will not work unless they have one absolutge path like "/bin/ls"</li>
+        <li><b>PATH is set but not found</b> - This could be because we already have one absolute path. We should check that with the access function using the flags F_OK to check if the file exists and X_OK to check if the file can be executed.</li>
+    </ol>
 </ol>
 
 ## Code Setup
