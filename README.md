@@ -21,7 +21,7 @@
     <li>The parent will have its standard input set to the file descriptor 0 of the fd array, and its output will be directed to the file specified as argument 4.</li>
     <li>Both child and parent will call <b>execute( )</b> first to got the path for envp and then to call execve to execute the command. We need to be alert for a few special cases:</li>
     <ol>
-        <li><b>PATH is not set</b> - If PATH is not set, the command will not work unless it has an absolute path, such as <b>'/bin/ls.'</b></li>
+        <li><b>PATH is not set</b> - If PATH is not set, the command will not work unless it has an absolute path, such as <b>'/bin/ls'</b>.</li>
         <li><b>PATH is set but not found</b> - This could be because we already have one absolute path. We should check that with the access function using the flags <b>F_OK</b> to check if the file exists and <b>X_OK</b> to check if the file can be executed.</li>
     </ol>
 </ol>
