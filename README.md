@@ -8,7 +8,7 @@
 
 ## Summary
 <p>
-    Pipex is an 42 School project wich has the goal to learn how to create pipes like bash terminal.
+    <b>Pipex</b> is an 42 School project wich has the goal to learn how to create pipes like bash terminal.
     The program receives 4 arguments. 1st is one file, second and third are bash comands like "ls, grep, ..."  and the number four other file. The argument number 4 does not need to exist because the program is able to creat it. This program should behave the same as bash :</p> <b>$> < file1 cmd1 | cmd2 > file2" </b>
 </p>
 
@@ -31,7 +31,7 @@
     <b>Step 1:</b> Clone the repository
 </p>
 
-    git clone https://github.com/Hugofslopes/pipex.git    
+    git clone https://github.com/Hugofslopes/pipex
 
 <p>
     <b>Step 2:</b> Open the terminal on the repo folder and write
